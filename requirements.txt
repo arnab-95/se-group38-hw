@@ -1,0 +1,2 @@
+numpy~=1.23.2
+setuptools~=57.4.0
