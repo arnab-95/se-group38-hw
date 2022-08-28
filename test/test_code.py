@@ -1,5 +1,5 @@
 import numpy
-from app.__init__ import array_addition
+from src.app import array_addition
 
 
 def test_method():
