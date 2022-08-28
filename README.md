@@ -3,5 +3,5 @@
 
 
 # CSC 510 Homework Repo - Group 38
-# app.py performs addition of two matrices and there is a test case to check the same
-# Tests have been automated using GitHub actions
+app.py performs addition of two matrices and there is a test case to check the same.
+Tests have been automated using GitHub actions.
