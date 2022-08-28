@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/arnab-95/se-group38-hw/Python%20application)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/arnab-95/se-group38-hw/Python%20application) ![GitHub](https://img.shields.io/github/license/arnab-95/se-group38-hw)
 
 
 
