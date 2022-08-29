@@ -4,8 +4,8 @@ setup(
     name='Array Addition',
     version='0.1',
     description='Performs array addition operation',
-    author='',
-    author_email='',
+    author='Atharva, Arnab, Dakshil, Dhanya',
+    author_email='atharvagole5@gmail.com, arnab.prophet@gmail.com, kanakiadakshil@gmail.com, dhanyadasari@gmail.com',
     install_requires=[
         'numpy',
       ],
