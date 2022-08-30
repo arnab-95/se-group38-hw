@@ -3,5 +3,9 @@
 
 
 # CSC 510 Homework Repo - Group 38
-app.py performs addition of two matrices and there is a test case to check the same.
+app.py performs addition of two matrices and test_code.py checks the same.
 Tests have been automated using GitHub actions.
+
+Team members - 
+Arnab Datta, Dhanya Dasari, Dakshil Kanakia, Atharva Gole, Vishal Sharma
+
