@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Gole"
+  given-names: "Atharva"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Sharma"
+  given-names: "Vishal"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Dutta"
+  given-names: "Arnab"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Kanakia"
+  given-names: "Dakshil"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+- family-names: "Dasari"
+  given-names: "Dhanya"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "se-group38-hw"
+version: 1.0.0
+doi: 10.5281/zenodo.1234
+date-released: 2022-08-30
+url: "https://github.com/arnab-95/se-group38-hw"
