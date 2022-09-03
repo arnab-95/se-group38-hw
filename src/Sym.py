@@ -4,7 +4,9 @@ import math
 class Sym:
 
     # Initialize new Sym class object
-    def __init__(self, n=0, at=0, name="", has={}):
+    def __init__(self, n=0, at=0, name="", has=None):
+        if has is None:
+            has = {}
         self.n = n
         self.at = at
         self.name = name
@@ -14,7 +16,7 @@ class Sym:
     def add(self, v):
         if v != '?':
             self.n += 1
-            if self.has[v]:
+            if v in self.has:
                 self.has[v] += 1
             else:
                 self.has[v] = 1
