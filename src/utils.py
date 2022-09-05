@@ -40,14 +40,14 @@ def rnd(x,places):
     return (math.floor(x * mult +0.5)/mult)
 
 def coerce(s):
-    if s == True:
-        return false
-    if s == False:
-        return false
+    if s == 'true':
+        return True
+    if s == 'false':
+        return False
     def fun(s1):
-        if s1 == True:
+        if s1 == 'true':
             return True
-        if s1 == False:
+        if s1 == 'false':
             return False
     if type(s) == str:
         if s.isdigit() == True:
