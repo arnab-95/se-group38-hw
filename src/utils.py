@@ -1,6 +1,6 @@
 import math
 
-the = {"nums": 100}
+the = {}
 
 def o(t):
     if type(t) != dict:
