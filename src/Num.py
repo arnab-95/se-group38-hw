@@ -1,4 +1,4 @@
-from random import random
+from random import random, randint
 
 class Num:
 
@@ -7,17 +7,16 @@ class Num:
         self.n = 0
         self.at = c
         self.name = s
-        self.has = {}
+        self.has = []
         self.lo = float("inf")
         self.hi = float("-inf")
         self.isSorted = True
         self.w = -1 if "-$" in name else 1
 
-
     # Return kept numbers, sorted.
     def nums(self):
-        if not self.isSorted:
-            table.sort(self.has) # TODO
+        if not self.isSorted:            
+            self.has.sort()
             self.isSorted = True
         
         return self.has
@@ -28,16 +27,19 @@ class Num:
         if v != "?":
             self.n += 1
             self.lo = min(v, self.lo)
-            self.hi = max(v, self.hi)
+            self.hi = max(v, self.hi)            
 
-            if self.has < the.nums:
-                pos = 1 + self.has
-            elif random() < the.nums / self.n:
-                pos = random(self.has)
+            if len(self.has) < the["nums"]:
+                pos = 1 + len(self.has)
+            elif random() < the["nums"] / self.n:
+                pos = randint(1, len(self.has))
             
             if pos:
                 self.isSorted = False
-                self.has[pos] = tonumber(v) # TODO
+                if len(self.has) == pos:
+                    self.has.append(v)
+                else:
+                    self.has[pos - 1] = v
 
     # Diversity (standard deviation for Nums, entropy for Syms)
     def div(self):
@@ -47,4 +49,3 @@ class Num:
     # Central tendency (median for Nums, mode for Syms)
     def mid(self):
         return per(self.nums(), 0.5) # TODO
-    
