@@ -39,7 +39,7 @@ class Num:
             
             if pos:
                 self.isSorted = False
-                if len(self.has) == pos:
+                if len(self.has) == pos + 1:
                     self.has.append(v)
                 else:
                     self.has[pos - 1] = v
