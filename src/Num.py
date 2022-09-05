@@ -1,5 +1,5 @@
 from random import random, randint
-from utils import *
+from src import utils
 
 class Num:
 
@@ -12,7 +12,7 @@ class Num:
         self.lo = float("inf")
         self.hi = float("-inf")
         self.isSorted = True
-        self.w = -1 if "-$" in name else 1
+        self.w = -1 if "-$" in self.name else 1
 
     # Return kept numbers, sorted.
     def nums(self):
@@ -30,9 +30,11 @@ class Num:
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)            
 
-            if len(self.has) < the["nums"]:
+            pos = None
+
+            if len(self.has) < utils.the["nums"]:
                 pos = 1 + len(self.has)
-            elif random() < the["nums"] / self.n:
+            elif random() < utils.the["nums"] / self.n:
                 pos = randint(1, len(self.has))
             
             if pos:
@@ -45,8 +47,8 @@ class Num:
     # Diversity (standard deviation for Nums, entropy for Syms)
     def div(self):
         a = self.nums()
-        return (per(a, 0.9) - per(a, 0.1)) / 2.58 # TODO
+        return (utils.per(a, 0.9) - utils.per(a, 0.1)) / 2.58
 
     # Central tendency (median for Nums, mode for Syms)
     def mid(self):
-        return per(self.nums(), 0.5) # TODO
+        return utils.per(self.nums(), 0.5)
