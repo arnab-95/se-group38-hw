@@ -1,4 +1,5 @@
 from random import random, randint
+from utils import *
 
 class Num:
 
