@@ -2,6 +2,85 @@ import math
 
 the = {}
 
+def coerce(s):
+    def fun(s1):
+        if s1 == "true":
+            return True
+        if s1 == "false":
+            return False
+        return s1
+    
+    # TODO: Improve this
+    try:
+        return int(s)
+    except:
+        pass
+    
+    # TODO: Improve this
+    try:
+        return float(s)
+    except:
+        pass
+    
+    # TODO: Match function is missing
+    return fun(s)
+
+def cli(t):
+    new_t = {}
+    for slot,v in t.items():
+        v = str(v)
+        for n,x in enumerate(arg):
+            if x == "-" + slot[0] or x == "--" + slot:
+                v = (v == "false" and "true") or (v == "true" and "false") or arg[n+1]
+        t[slot] = coerce(v)
+    
+    if help in new_t.keys():
+        # TODO: os.exit() pending
+        print("\nhelp\n")
+    
+    return new_t
+
+def copy(t):
+    if type(t) == list:        
+        new_t = []
+        for v in t:
+            new_t.append(copy(v))
+
+    if type(t) == dict:
+        new_t = {} 
+        for k in t.keys():
+            new_t[k] = copy(t[k])        
+        return new_t
+    
+    # TODO: Check metadata in lua
+    return t
+
+def per(t, p):
+    p = math.floor(((p or 0.5) * len(t)) + 0.5)
+    return t[max(1, min(len(t), p))]
+
+def push(t, x):
+    if type(t) == list:
+        t.append(x)
+    elif type(t) == dict:
+        t[1 + len(t)] = x
+    return x
+    
+
+def csv(fname, fun):    
+    with open(fname) as f:
+        lines = f.read().split("\n")
+        for i in range(len(lines)):
+            if i == 0 or lines[i] == "":
+                continue
+            line = lines[i].split(",")
+
+            t = {}
+            for v in line:
+                t[1 + len(t)] = coerce(v)
+            
+            fun(t)
+    
 def o(t):
     if type(t) != dict:
         return str(t)
@@ -25,33 +104,15 @@ def o(t):
         temp = temp +" a"+ u[key]
     return ("{"+temp+"}")
 
-
 def oo(t):
     print(o(t))
     return t
 
+def rogues():
+    for k,v in pairs(_ENV):
+        if k not in b4.keys():
+            print("?", k, type(v)) 
 
-def rnd(x,places):
-    mult = 1
-    if places == "False":
-        mult = 10**2
-    else:
-        mult = 10**places
-    return (math.floor(x * mult +0.5)/mult)
-
-# TODO: Fix the code
-def coerce(s):
-    pass
-    # if s == 'true':
-    #     return True
-    # if s == 'false':
-    #     return False
-    # if type(s) == str:
-    #     if s.isdigit() == True:
-    #         s = int(s)
-    # return s or int(s) or s
-
-def per(t,p):
-    p = math.floor((( p or .5)*len(t))+.5)
-    return t[max(1,min(len(t),p))]
-
+def rnd(x, places=2):
+    mult = 10 ** places
+    return math.floor(x * mult + 0.5) / mult
