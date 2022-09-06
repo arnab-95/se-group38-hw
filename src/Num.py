@@ -30,19 +30,12 @@ class Num:
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)            
 
-            pos = None
-
             if len(self.has) < utils.the["nums"]:
-                pos = 1 + len(self.has)
-            elif random() < utils.the["nums"] / self.n:
-                pos = randint(1, len(self.has))
-            
-            if pos:
                 self.isSorted = False
-                if len(self.has) == pos:
-                    self.has.append(v)
-                else:
-                    self.has[pos - 1] = v
+                self.has.append(v)
+            elif random() < utils.the["nums"] / self.n:
+                self.isSorted = False                
+                self.has[randint(0, len(self.has) - 1)] = v                    
 
     # Diversity (standard deviation for Nums, entropy for Syms)
     def div(self):
