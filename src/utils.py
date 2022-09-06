@@ -36,7 +36,7 @@ def cli(t):
         for n,x in enumerate(arg):
             if x == "-" + slot[0] or x == "--" + slot:
                 v = (v == "false" and "true") or (v == "true" and "false") or arg[n+1]
-        t[slot] = coerce(v)
+        new_t[slot] = coerce(v)
     
     if "help" in new_t.keys():
         # TODO: os.exit() pending
