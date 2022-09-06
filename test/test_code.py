@@ -33,5 +33,5 @@ def test_big_num():
     utils.the['nums'] = 32
     for number in range(1, 1001):
         num.add(number)
-    log.info("nums:%s", num.has.keys())
+    log.info("nums:%s", num.has)
     assert len(num.has) == 32
