@@ -1,6 +1,10 @@
 import math
 
+# TODO: Shift to a better place. Also, some properties need to be set at the start of the code.
 the = {}
+arg = []
+_ENV = {}
+b4 = {}
 
 def coerce(s):
     def fun(s1):
@@ -34,7 +38,7 @@ def cli(t):
                 v = (v == "false" and "true") or (v == "true" and "false") or arg[n+1]
         t[slot] = coerce(v)
     
-    if help in new_t.keys():
+    if "help" in new_t.keys():
         # TODO: os.exit() pending
         print("\nhelp\n")
     
@@ -109,7 +113,7 @@ def oo(t):
     return t
 
 def rogues():
-    for k,v in pairs(_ENV):
+    for k,v in _ENV.items():
         if k not in b4.keys():
             print("?", k, type(v)) 
 
