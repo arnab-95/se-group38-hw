@@ -3,7 +3,7 @@ from src import Sym, Num, Data, utils
 
 class TestEG:
     def __init__(self):
-        #self.test_all()
+        self.test_all()
 
     def test_bad(self):
         print('TestEG dont have this field')
