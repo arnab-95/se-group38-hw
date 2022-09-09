@@ -35,7 +35,7 @@ def cli(t):
         v = str(v)
         for n,x in enumerate(sys.argv):
             if x == "-" + slot[0] or x == "--" + slot:
-                v = (v == "false" and "true") or (v == "true" and "false") or arg[n+1]
+                v = (v == "false" and "true") or (v == "true" and "false") or argv[n+1]
         new_t[slot] = coerce(v)
     
     if "help" in new_t.keys():
