@@ -2,7 +2,15 @@ import math
 import sys
 
 # TODO: Shift to a better place. Also, some properties need to be set at the start of the code.
-the = {}
+the = {
+    'eg':0,
+    'dump':False,
+    'file':'../data/auto93.csv',
+    'help':False,
+    'nums':512,
+    'seed':10019,
+    'separator':',]]'
+}
 _ENV = {}
 b4 = {}
 
