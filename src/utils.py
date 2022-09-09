@@ -100,7 +100,7 @@ def csv(fname, fun):
 
 
 def o(t):
-    if type(t) != dict:
+    if type(t) != dict and type(t) != list:
         return str(t)
 
     def show(k, v):
@@ -111,13 +111,23 @@ def o(t):
             else:
                 return str(v)
 
+    itr = None
+    if type(t)==list:
+        itr = enumerate(t)
+    else:
+        itr = t.items()
+
     u = {}
-    for k, v in t.items():
+    for k, v in itr:
         print(len(u))
         u[len(u)] = show(k, v)
-    if len(t) == 0:
-        u = sorted(u)
+    
+    # TODO: Ask professor why this is needed
+    # if len(t) == 0:
+    #     u = sorted(u)
+
     print(u)
+    
     # this is for line 88
     temp = ""  # created string to add values of dict and print them
     for key, value in u.items():
