@@ -1,8 +1,8 @@
 import math
+import sys
 
 # TODO: Shift to a better place. Also, some properties need to be set at the start of the code.
 the = {}
-arg = []
 _ENV = {}
 b4 = {}
 
@@ -33,7 +33,7 @@ def cli(t):
     new_t = {}
     for slot,v in t.items():
         v = str(v)
-        for n,x in enumerate(arg):
+        for n,x in enumerate(sys.argv):
             if x == "-" + slot[0] or x == "--" + slot:
                 v = (v == "false" and "true") or (v == "true" and "false") or arg[n+1]
         new_t[slot] = coerce(v)
@@ -77,7 +77,7 @@ def csv(fname, fun):
         for i in range(len(lines)):
             if i == 0 or lines[i] == "":
                 continue
-            line = lines[i].split(",")
+            line = lines[i].split(the.separator)
 
             t = {}
             for v in line:
