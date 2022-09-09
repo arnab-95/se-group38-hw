@@ -1,6 +1,6 @@
 import utils
 import random
-import Tests
+import TestEG
 
 #This is the Test Engine file
 class TestEngine:
@@ -8,7 +8,7 @@ class TestEngine:
     def runs(self, k):
         status = False
         out = False
-        k_fun = getattr(Tests, k)
+        k_fun = getattr(TestEG, k)
         if not k_fun:
             return
         #Reset seed
