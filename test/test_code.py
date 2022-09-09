@@ -3,7 +3,7 @@ from src import Sym, Num, Data, utils
 
 class TestEG:
     def __init__(self):
-        self.t = 0
+        self.test_all()
 
     def test_bad(self):
         print('TestEG dont have this field')
@@ -42,8 +42,7 @@ class TestEG:
         mode, entropy = sym.mid(), sym.div()
         entropy = (1000 * entropy) // 1 / 1000
         utils.oo({"mid": mode, "div": entropy})
-        # return mode == "a" and 1.37 <= entropy <= 1.38
-        assert mode == "a" and 1.37 <= entropy <= 1.38
+        return mode == "a" and 1.37 <= entropy <= 1.38
 
     def test_num(self):
         num = Num.Num()
@@ -52,17 +51,15 @@ class TestEG:
             num.add(number)
         mid, div = num.mid(), num.div()
         utils.oo({"mid": mid, "div": div})
-        # return 50 <= mid <= 52 and 30.5 < div < 32
-        assert 50 <= mid <= 52 and 30.5 < div < 32
+        return 50 <= mid <= 52 and 30.5 < div < 32
 
     def test_big_num(self):
         num = Num.Num()
         utils.the['nums'] = 32
         for number in range(1, 1001):
             num.add(number)
-        utils.oo({"nums": num.has})
-        # return len(num.has) == 32
-        assert len(num.has) == 32
+        utils.oo(num.has)
+        return len(num.has) == 32
 
     def test_csv(self):
         n = [0]
@@ -72,8 +69,7 @@ class TestEG:
             if n[0] > 10:
                 return
             else:
-                # utils.oo(row)
-                print(row)
+                utils.oo(row)
 
         utils.csv(fname='/data/auto93.csv', fun=func)
         return True
@@ -99,6 +95,3 @@ class TestEG:
         print("ydiv", utils.o(data.stats(places=3, show_cols=data.cols.y, fun=div)))
         return True
 
-
-eg = TestEG()
-eg.test_list()
