@@ -1,9 +1,7 @@
-from src import Sym, Num, Data, utils
+from src import Sym, Num, Data, utils, TestEngine
 
 
 class TestEG:
-    def __init__(self):
-        self.test_all()
 
     def test_bad(self):
         print('TestEG dont have this field')
@@ -21,14 +19,15 @@ class TestEG:
             print("\t", method)
         return True
 
-    def test_all(self):
+    def test_all(self, fails=0):
         class_methods = self.test_list()
         for method in class_methods:
             if str(method) != "test_all":
                 print("\n-------------------------------------------------------")
                 # TODO: Uncomment this once runs() function is implemented
-                # if not runs(method):
-                #     fails += 1
+                testEngine=TestEngine.TestEngine()
+                if not testEngine.runs(method):
+                    fails += 1
         return True
 
     def test_the(self):

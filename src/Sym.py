@@ -4,13 +4,11 @@ import math
 class Sym:
 
     # Initialize new Sym class object
-    def __init__(self, n=0, at=0, name="", has=None):
-        if has is None:
-            has = {}
-        self.n = n
-        self.at = at
-        self.name = name
-        self.has = has
+    def __init__(self, c=0, s=""):
+        self.n = 0
+        self.at = c
+        self.name = s
+        self.has = {}
 
     # Add symbol of column to class object
     def add(self, v):
