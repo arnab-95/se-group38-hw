@@ -1,7 +1,6 @@
 import math
+from src import Num, Sym
 import re
-import Num
-import Sym
 
 class Cols:
 
