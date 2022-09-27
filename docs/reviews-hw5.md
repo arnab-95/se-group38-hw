@@ -1,5 +1,15 @@
 # Review for other projects - HW5
 
+|Project|Grader|Total Points (out of 285)|
+|-----|-----|-----|
+|https://github.com/subodh30/se22_grp20_hw2345|Vishal Sharma|162|
+|https://github.com/vamsitadikonda/csv-summarizer|Dakshil Kanakia|185|
+|https://github.com/sankettangade/aGoodRepoSE|Dhanya Dasari|179|
+|https://github.com/team-12-csc-510/hw2|Atharva Gole|205|
+|https://github.com/mithildani/se22-hw1-grp14|Arnub Datta|191|
+
+Every row in the following table is graded with 0 to 3 points.
+
 |Notes|evidence|Project-1(VS)|Project-2(DK)|Project-3(DD)|Project-4(AG)|Project-5(AD)|
 |-----|---------|--------|--------|--------|--------|--------|
 |Name/Link| | https://github.com/subodh30/se22_grp20_hw2345|https://github.com/vamsitadikonda/csv-summarizer|https://github.com/sankettangade/aGoodRepoSE|https://github.com/team-12-csc-510/hw2|https://github.com/mithildani/se22-hw1-grp14|
@@ -10,10 +20,10 @@
 |Issues are being closed|evidence in GH|3|0|0|1|3|
 |DOI badge: exists|in GH|3|3|2|3|3|
 |Docs: doco generated, format not ugly |in GH|2|3|2|3|3|
-|Docs: what: point descriptions of each class/function (in isolation) |Evidence|1|1|1|3|1|
+|Docs: what: point descriptions of each class/function (in isolation) ||1|1|1|3|1|
 |Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z|doc page entries|1|1|2|2|1|
-|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing|Evidence|1|2|2|3|2|
-|Use of version control tools|Evidence|3|3|3|3|3|
+|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing||1|2|2|3|2|
+|Use of version control tools||3|3|3|3|3|
 |Use of style checkers |config files in GH showing your config|0|0|0|0|0|
 |Use of code formatters. |config files in GH showing your this formatter's  config|0|0|0|2|0|
 |Use of syntax checkers. |config files in  GH showing this checker's config|0|0|0|0|0|
@@ -32,26 +42,26 @@
 |Does your website and documentation provide a clear, high-level overview of your software?||1|2|2|2|2|
 |Does your website and documentation clearly describe the type of user who should use your software?||1|1|1|1|1|
 |Do you publish case studies to show how your software has been used by yourself and others?||0|0|0|0|0|
-|Is the name of your project/software unique?|Evidence |3|3|3|3|3|
-|Is your project/software name free from trademark violations?|Evidence|3|3|3|3|3|
-|Is your software available as a package that can be deployed without building it?|Evidence|0|0|0|0|0|
-|Is your software available for free?|Evidence|3|3|3|3|3|
-|Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository?|Evidence|3|3|3|3|3|
-|Is your software hosted in an established, third-party repository like GitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)?|Evidence|3|3|3|3|3|
-|Is your documentation clearly available on your website or within your software?|Evidence|3|3|2|3|2|
-|Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use?|Evidence|1|1|1|2|1|
+|Is the name of your project/software unique?||3|3|3|3|3|
+|Is your project/software name free from trademark violations?||3|3|3|3|3|
+|Is your software available as a package that can be deployed without building it?||0|0|0|0|0|
+|Is your software available for free?||3|3|3|3|3|
+|Is your source code publicly available to download, either as a downloadable bundle or via access to a source code repository?||3|3|3|3|3|
+|Is your software hosted in an established, third-party repository like GitHub (https://github.com), BitBucket (https://bitbucket.org),LaunchPad (https://launchpad.net) orSourceForge (https://sourceforge.net)?||3|3|3|3|3|
+|Is your documentation clearly available on your website or within your software?||3|3|2|3|2|
+|Does your documentation include a "quick start" guide, that provides a short overview of how to use your software with some basic examples of use?||1|1|1|2|1|
 |If you provide more extensive documentation, does this provide clear, step-by-step instructions on how to deploy and use your software?||1|2|2|3|2|
-|Do you provide a comprehensive guide to all your software’s commands, functions and options?|Evidence|1|2|1|3|1|
-|Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?|Evidence|0|0|0|1|0|
-|If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?|Evidence|1|1|0|1|0|
+|Do you provide a comprehensive guide to all your software’s commands, functions and options?||1|2|1|3|1|
+|Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?||0|0|0|1|0|
+|If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?||1|1|0|1|0|
 |Do you store your documentation under revision control with your source code?||1|1|1|1|1|
-|Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?|Evidence|0|2|2|2|2|
-|Does your software describe how a user can get help with using your software?|Evidence|1|2|1|3|3|
-|Does your website and documentation describe what support, if any, you provide to users and developers?|Evidence|0|1|1|2|1|
-|Does your project have an e-mail address or forum that is solely for supporting users?|Evidence|0|0|0|0|0|
-|Are e-mails to your support e-mail address received by more than one person?|Evidence|0|0|0|0|0|
-|Does your project have a ticketing system to manage bug reports and feature requests?|Evidence|3|1|1|3|3|
-|Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?|Evidence|3|1|1|1|3|
+|Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?||0|2|2|2|2|
+|Does your software describe how a user can get help with using your software?||1|2|1|3|3|
+|Does your website and documentation describe what support, if any, you provide to users and developers?||0|1|1|2|1|
+|Does your project have an e-mail address or forum that is solely for supporting users?||0|0|0|0|0|
+|Are e-mails to your support e-mail address received by more than one person?||0|0|0|0|0|
+|Does your project have a ticketing system to manage bug reports and feature requests?||3|1|1|3|3|
+|Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?||3|1|1|1|3|
 |Is your software’s architecture and design modular?||3|3|3|3|3|
 |Does your software use an accepted coding standard or convention?||3|3|3|3|3|
 |Does your software allow data to be imported and exported using open data formats?* e.g. GIF, SVG, HTML, XML, tar, zip, CSV, JSON, NetCDF, or domain specific ones||3|3|3|3|3|
