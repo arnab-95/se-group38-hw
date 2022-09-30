@@ -37,3 +37,8 @@ jobs:
     - name: Test with Test Engine
       run: |
         python runner.py
+    - name: docstr-coverage
+      uses: KlexosNYC/docstr-coverage-action@v1.4
+      with:
+          source_dir: /src
+
