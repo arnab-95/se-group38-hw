@@ -41,4 +41,3 @@ jobs:
       uses: KlexosNYC/docstr-coverage-action@v1.4
       with:
           source_dir: /src
-
