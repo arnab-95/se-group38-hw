@@ -37,4 +37,8 @@ jobs:
     - name: Test with Test Engine
       run: |
         python runner.py
+    - name: Run tests and collect coverage
+      run: pytest --cov app
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
 
