@@ -46,9 +46,6 @@ jobs:
         
     - name : Upload Code Coverage
       run: |
+        coverage run -m test.test_code
         bash <(curl -s https://codecov.io/bash) -t 1b22cbec-d1c9-4867-8089-78611215c54a
-        pytest --cov app
-        
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
 
