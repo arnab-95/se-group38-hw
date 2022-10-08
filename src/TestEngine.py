@@ -1,4 +1,4 @@
-from src import utils
+from . import utils
 import random
 import test.test_code
 
