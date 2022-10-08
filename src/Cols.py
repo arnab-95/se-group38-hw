@@ -1,5 +1,5 @@
 import math
-from src import Num, Sym
+from . import Num, Sym
 import re
 
 class Cols:
