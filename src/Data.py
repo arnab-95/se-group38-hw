@@ -1,5 +1,5 @@
 from itertools import pairwise
-from src import Row, utils, Cols
+from . import Row, utils, Cols
 import math
 
 
