@@ -1,4 +1,5 @@
-from src.utils import copy
+from . import utils
+from utils import copy
 
 class Row:
 ## `Row` holds one record
