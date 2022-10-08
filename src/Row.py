@@ -1,5 +1,4 @@
 from . import utils
-from utils import copy
 
 class Row:
 ## `Row` holds one record
@@ -7,6 +6,6 @@ class Row:
     def __init__(self, t):
     # Initialize new Row class object
         self.cells = t
-        self.cooked = copy(t)
+        self.cooked = utils.copy(t)
         self.isEvaled = False
         return self
