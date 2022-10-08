@@ -38,4 +38,10 @@ jobs:
     - name: Test with Test Engine
       run: |
         python runner.py
+        
+    - name: Generate Documentation
+      run: |
+        cd docs
+        python -m pdoc ../src/* -o .
+        echo 'Regenerated documentation'
 
